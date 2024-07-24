@@ -31,7 +31,7 @@ Ensure you have a modern web browser that supports ES6 JavaScript and HTML5.
 
 2. Navigate to the project directory:
     ```bash
-    cd fsis-payload-debug
+    cd payload-debug
     ```
 
 3. Open `index.html` in your browser:
