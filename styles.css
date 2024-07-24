@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #121212;
     color: #e0e0e0;
+    line-height: 1.6;
 }
 
 .container {
@@ -11,11 +12,15 @@ body {
     margin: 50px auto;
     padding: 20px;
     background-color: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
     text-align: center;
     color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -30,29 +35,43 @@ textarea {
     background-color: #2d2d2d;
     color: #e0e0e0;
     resize: vertical;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 a {
+    color: #76c7ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b3e5ff;
 }
 
 button {
     display: block;
     width: 100%;
     padding: 15px;
+    background-color: #0069d9;
     color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 18px;
     cursor: pointer;
     margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 button:active {
     transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #output {
@@ -64,6 +83,7 @@ button:active {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
 }
 
 .group {
@@ -87,6 +107,7 @@ button:active {
     color: #e0e0e0;
     font-weight: 600;
     font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .group-header {
@@ -103,12 +124,17 @@ button:active {
 
 .group-header:hover {
     background-color: #37474f;
+    color: #ffffff;
 }
 
 .operation-header:hover {
+    background-color: #57288d;
+    color: #ffffff;
 }
 
 .structure-header:hover {
+    background-color: #724f18;
+    color: #ffffff;
 }
 
 .group-content, .operation-content, .structure-content {
@@ -147,20 +173,27 @@ button.copy-btn {
     font-size: 14px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 button.copy-btn:hover {
     background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 button.copy-btn:active {
     transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .additional-info {
     font-size: 14px;
+    color: #ffffff;
     margin-top: 10px;
+    padding: 12px;
+    background-color: #cc7a00;
     border-radius: 8px;
 }
 
@@ -170,19 +203,23 @@ button.copy-btn:active {
 
 .from-to-header {
     cursor: pointer;
+    padding: 12px;
     background-color: #333;
     color: #e0e0e0;
     border-bottom: 1px solid #444;
     font-weight: 600;
     font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .from-to-header:hover {
     background-color: #444;
+    color: #ffffff;
 }
 
 .from-to-content {
     display: none;
+    padding: 12px;
     background-color: #2d2d2d;
     border: 1px solid #444;
     border-top: none;
